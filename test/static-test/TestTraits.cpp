@@ -3,6 +3,7 @@
 #include "tlp/traits/IsBaseOf.h"
 #include "tlp/traits/IsBuiltIn.h"
 #include "tlp/traits/LambdaTraits.h"
+#include "tlp/traits/TypeTraits.h"
 
 FIXTURE(TestTraits)
 {
@@ -63,5 +64,12 @@ FIXTURE(TestTraits)
             ASSERT_EQ(__lambda_para(Lambda, 1), char);
             ASSERT_EQ(__lambda_para(Lambda, 2), __null());
         }
+    };
+
+    TEST("test type trait") {
+        ASSERT_FALSE(TLP_NS::is_char<int>);
+        ASSERT_TRUE(TLP_NS::is_char<char>);
+        ASSERT_EQ(TLP_NS::remove_reference_t<const char&>, const char);
+        ASSERT_EQ(TLP_NS::remove_cv_t<const char>, char);
     };
 };
