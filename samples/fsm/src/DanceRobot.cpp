@@ -21,7 +21,8 @@
 /*******************************************************************/
 
 #include <StateMachine.h>
-#include <string>
+
+#include "string"
 
 namespace
 {

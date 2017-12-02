@@ -1,8 +1,8 @@
 #ifndef HAF187113_711A_4378_A5A9_BF5AF35484DA
 #define HAF187113_711A_4378_A5A9_BF5AF35484DA
 
-#include <tlp/list/algo/Fold.h>
-#include <tlp/list/algo/Replace.h>
+#include "tlp/list/algo/Fold.h"
+#include "tlp/list/algo/Replace.h"
 
 TLP_NS_BEGIN
 

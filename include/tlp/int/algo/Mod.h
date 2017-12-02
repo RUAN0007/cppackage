@@ -1,7 +1,7 @@
 #ifndef H7182635A_9E73_4A84_84AA_5C4B94ECB2C9
 #define H7182635A_9E73_4A84_84AA_5C4B94ECB2C9
 
-#include <tlp/int/IntType.h>
+#include "tlp/int/IntType.h"
 
 TLP_NS_BEGIN
 

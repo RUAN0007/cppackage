@@ -1,8 +1,8 @@
 #ifndef H73C57738_42EF_4AAF_89A3_5AFC336EF6CB
 #define H73C57738_42EF_4AAF_89A3_5AFC336EF6CB
 
-#include <tlp/base/NullType.h>
-#include <tlp/list/TypeElem.h>
+#include "tlp/base/NullType.h"
+#include "tlp/list/TypeElem.h"
 
 TLP_NS_BEGIN
 

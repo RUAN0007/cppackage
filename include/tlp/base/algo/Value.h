@@ -1,9 +1,9 @@
 #ifndef HB1BA0321_BE39_427C_BF4F_6DDA75A22650
 #define HB1BA0321_BE39_427C_BF4F_6DDA75A22650
 
-#include <tlp/tlp.h>
-#include <tlp/base/NullType.h>
-#include <tlp/base/EmptyType.h>
+#include "tlp/tlp.h"
+#include "tlp/base/NullType.h"
+#include "tlp/base/EmptyType.h"
 
 TLP_NS_BEGIN
 

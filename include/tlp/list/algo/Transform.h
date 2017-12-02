@@ -1,8 +1,8 @@
 #ifndef H3D22A656_83FD_4CBB_8612_320370919EB0
 #define H3D22A656_83FD_4CBB_8612_320370919EB0
 
-#include <tlp/list/TypeElem.h>
-#include <tlp/base/NullType.h>
+#include "tlp/list/TypeElem.h"
+#include "tlp/base/NullType.h"
 
 TLP_NS_BEGIN
 

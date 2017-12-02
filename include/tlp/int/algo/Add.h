@@ -1,7 +1,7 @@
 #ifndef H44BF8825_B3E4_40BE_B12D_74FE2EE883CB
 #define H44BF8825_B3E4_40BE_B12D_74FE2EE883CB
 
-#include <tlp/int/IntType.h>
+#include "tlp/int/IntType.h"
 
 TLP_NS_BEGIN
 

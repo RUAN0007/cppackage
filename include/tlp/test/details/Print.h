@@ -1,8 +1,8 @@
 #ifndef HAEB4E27F_9DA3_4117_A178_858B2149E0CB
 #define HAEB4E27F_9DA3_4117_A178_858B2149E0CB
 
-#include <tlp/tlp.h>
-#include <tlp/test/details/utils/UniqueName.h>
+#include "tlp/tlp.h"
+#include "tlp/test/details/utils/UniqueName.h"
 
 TLP_NS_BEGIN
 

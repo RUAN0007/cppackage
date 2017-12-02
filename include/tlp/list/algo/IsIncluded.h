@@ -1,7 +1,7 @@
 #ifndef HDBB1354D_2A0D_4455_9DF2_651BCF48EF45
 #define HDBB1354D_2A0D_4455_9DF2_651BCF48EF45
 
-#include <tlp/list/algo/IndexOf.h>
+#include "tlp/list/algo/IndexOf.h"
 
 TLP_NS_BEGIN
 

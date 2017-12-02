@@ -1,8 +1,8 @@
-#include <tlp/test/Test.hpp>
-#include <tlp/traits/IsConvertible.h>
-#include <tlp/traits/IsBaseOf.h>
-#include <tlp/traits/IsBuiltIn.h>
-#include <tlp/traits/LambdaTraits.h>
+#include "tlp/test/Test.hpp"
+#include "tlp/traits/IsConvertible.h"
+#include "tlp/traits/IsBaseOf.h"
+#include "tlp/traits/IsBuiltIn.h"
+#include "tlp/traits/LambdaTraits.h"
 
 FIXTURE(TestTraits)
 {

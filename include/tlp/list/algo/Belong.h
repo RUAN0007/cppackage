@@ -1,11 +1,11 @@
 #ifndef H21D575F7_0565_4E05_A4D9_27DEB84367C7
 #define H21D575F7_0565_4E05_A4D9_27DEB84367C7
 
-#include <tlp/base/NullType.h>
-#include <tlp/bool/BoolType.h>
-#include <tlp/bool/algo/Or.h>
-#include <tlp/list/TypeElem.h>
-#include <tlp/list/algo/IsSubset.h>
+#include "tlp/base/NullType.h"
+#include "tlp/bool/BoolType.h"
+#include "tlp/bool/algo/Or.h"
+#include "tlp/list/TypeElem.h"
+#include "tlp/list/algo/IsSubset.h"
 
 TLP_NS_BEGIN
 

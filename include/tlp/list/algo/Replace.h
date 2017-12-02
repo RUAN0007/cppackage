@@ -1,8 +1,8 @@
 #ifndef H12A8EB65_32BB_4F29_9946_3A9D1DEACC80
 #define H12A8EB65_32BB_4F29_9946_3A9D1DEACC80
 
-#include <tlp/tlp.h>
-#include <tlp/base/NullType.h>
+#include "tlp/tlp.h"
+#include "tlp/base/NullType.h"
 
 TLP_NS_BEGIN
 

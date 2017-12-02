@@ -1,8 +1,8 @@
-#include <tlp/test/Test.hpp>
-#include <tlp/int/IntType.h>
-#include <tlp/int/algo/Add.h>
-#include <tlp/int/algo/Mul.h>
-#include <tlp/func/Forward.h>
+#include "tlp/test/Test.hpp"
+#include "tlp/int/IntType.h"
+#include "tlp/int/algo/Add.h"
+#include "tlp/int/algo/Mul.h"
+#include "tlp/func/Forward.h"
 
 FIXTURE(TestSetUp)
 {

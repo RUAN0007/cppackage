@@ -1,7 +1,7 @@
 #ifndef H9443FEC6_D04B_4E94_8465_1420865C94CF
 #define H9443FEC6_D04B_4E94_8465_1420865C94CF
 
-#include <tlp/bool/BoolType.h>
+#include "tlp/bool/BoolType.h"
 
 TLP_NS_BEGIN
 

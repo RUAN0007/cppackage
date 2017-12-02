@@ -1,7 +1,7 @@
 #ifndef H5363CEF5_E51E_4FBB_AF00_DEB9C0A1981E
 #define H5363CEF5_E51E_4FBB_AF00_DEB9C0A1981E
 
-#include <tlp/int/IntType.h>
+#include "tlp/int/IntType.h"
 
 TLP_NS_BEGIN
 

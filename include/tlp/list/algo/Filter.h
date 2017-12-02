@@ -1,9 +1,9 @@
 #ifndef H4E05AF83_73C7_4843_9C95_D7ACC20D2ED6
 #define H4E05AF83_73C7_4843_9C95_D7ACC20D2ED6
 
-#include <tlp/base/NullType.h>
-#include <tlp/list/TypeElem.h>
-#include <tlp/bool/algo/IfThenElse.h>
+#include "tlp/base/NullType.h"
+#include "tlp/list/TypeElem.h"
+#include "tlp/bool/algo/IfThenElse.h"
 
 TLP_NS_BEGIN
 

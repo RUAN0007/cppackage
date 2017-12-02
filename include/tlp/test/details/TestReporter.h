@@ -1,7 +1,7 @@
 #ifndef H01A87FA8_927C_4E06_94DF_C4B5F56ADE71
 #define H01A87FA8_927C_4E06_94DF_C4B5F56ADE71
 
-#include <tlp/test/details/TestRegister.h>
+#include "tlp/test/details/TestRegister.h"
 #include <iostream>
 
 TLP_NS_BEGIN

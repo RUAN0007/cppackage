@@ -1,9 +1,9 @@
 #ifndef H8A29A5DB_3E7A_4A1F_AFFA_F07D59B2690A
 #define H8A29A5DB_3E7A_4A1F_AFFA_F07D59B2690A
 
-#include <tlp/base/NullType.h>
-#include <tlp/list/TypeElem.h>
-#include <tlp/bool/algo/IfThenElse.h>
+#include "tlp/base/NullType.h"
+#include "tlp/list/TypeElem.h"
+#include "tlp/bool/algo/IfThenElse.h"
 
 TLP_NS_BEGIN
 

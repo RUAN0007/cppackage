@@ -1,8 +1,8 @@
 #ifndef H088A985C_B64D_45E9_8BD6_0EADBB29CA48
 #define H088A985C_B64D_45E9_8BD6_0EADBB29CA48
 
-#include <tlp/func/Forward.h>
-#include <tlp/list/algo/TypeList.h>
+#include "tlp/func/Forward.h"
+#include "tlp/list/algo/TypeList.h"
 
 namespace triangle
 {

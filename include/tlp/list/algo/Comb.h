@@ -1,12 +1,12 @@
 #ifndef HEB9EB0F5_8645_4142_93B8_979041FAAE11
 #define HEB9EB0F5_8645_4142_93B8_979041FAAE11
 
-#include <tlp/int/IntType.h>
-#include <tlp/list/algo/Length.h>
-#include <tlp/list/algo/Map.h>
-#include <tlp/list/algo/Append.h>
-#include <tlp/bool/algo/IsEqual.h>
-#include <tlp/func/SelectFunc.h>
+#include "tlp/int/IntType.h"
+#include "tlp/list/algo/Length.h"
+#include "tlp/list/algo/Map.h"
+#include "tlp/list/algo/Append.h"
+#include "tlp/bool/algo/IsEqual.h"
+#include "tlp/func/SelectFunc.h"
 
 TLP_NS_BEGIN
 

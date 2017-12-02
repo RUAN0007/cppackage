@@ -1,8 +1,8 @@
 #ifndef H166D0F49_5D4C_46C8_A9A1_0A3B55521C37
 #define H166D0F49_5D4C_46C8_A9A1_0A3B55521C37
 
-#include <tlp/bool/BoolType.h>
-#include <tlp/bool/algo/And.h>
+#include "tlp/bool/BoolType.h"
+#include "tlp/bool/algo/And.h"
 
 TLP_NS_BEGIN
 

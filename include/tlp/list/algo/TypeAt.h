@@ -1,8 +1,8 @@
 #ifndef H3E904CF8_07E3_4046_983D_13484B3DB98B
 #define H3E904CF8_07E3_4046_983D_13484B3DB98B
 
-#include <tlp/list/TypeElem.h>
-#include <tlp/int/IntType.h>
+#include "tlp/list/TypeElem.h"
+#include "tlp/int/IntType.h"
 
 TLP_NS_BEGIN
 

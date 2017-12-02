@@ -1,12 +1,13 @@
 #ifndef H1FA6AF36_DFE1_4640_823A_39D9A921D312
 #define H1FA6AF36_DFE1_4640_823A_39D9A921D312
 
-#include <tlp/func/Forward.h>
-#include <tlp/list/TypeElem.h>
-#include <tlp/list/algo/Belong.h>
-#include <tlp/bool/algo/Not.h>
-#include <tlp/bool/algo/And.h>
-#include <Points.h>
+#include "Points.h"
+
+#include "tlp/func/Forward.h"
+#include "tlp/list/TypeElem.h"
+#include "tlp/list/algo/Belong.h"
+#include "tlp/bool/algo/Not.h"
+#include "tlp/bool/algo/And.h"
 
 namespace triangle
 {

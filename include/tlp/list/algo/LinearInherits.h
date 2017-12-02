@@ -1,9 +1,9 @@
 #ifndef HB59984C7_38BC_4B83_BA98_213845BFFF81
 #define HB59984C7_38BC_4B83_BA98_213845BFFF81
 
-#include <tlp/base/EmptyType.h>
-#include <tlp/base/NullType.h>
-#include <tlp/list/TypeElem.h>
+#include "tlp/base/EmptyType.h"
+#include "tlp/base/NullType.h"
+#include "tlp/list/TypeElem.h"
 
 TLP_NS_BEGIN
 

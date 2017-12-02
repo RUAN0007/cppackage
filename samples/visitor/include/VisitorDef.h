@@ -1,8 +1,8 @@
 #ifndef HD32859A3_2126_496E_90DB_8149C3B25EDE
 #define HD32859A3_2126_496E_90DB_8149C3B25EDE
 
-#include <tlp/list/algo/TypeList.h>
-#include <tlp/list/algo/ScatterInherits.h>
+#include "tlp/list/algo/TypeList.h"
+#include "tlp/list/algo/ScatterInherits.h"
 
 namespace visitor
 {

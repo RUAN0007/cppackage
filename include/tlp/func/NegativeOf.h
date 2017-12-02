@@ -1,7 +1,7 @@
 #ifndef H37D127DF_B5A3_4DA6_A073_10FC6E8D7B45
 #define H37D127DF_B5A3_4DA6_A073_10FC6E8D7B45
 
-#include <tlp/bool/algo/Not.h>
+#include "tlp/bool/algo/Not.h"
 
 TLP_NS_BEGIN
 

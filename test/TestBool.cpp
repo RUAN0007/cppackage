@@ -1,8 +1,8 @@
-#include <tlp/test/Test.hpp>
-#include <tlp/bool/algo/Not.h>
-#include <tlp/bool/algo/And.h>
-#include <tlp/bool/algo/Or.h>
-#include <tlp/bool/algo/IfThenElse.h>
+#include "tlp/test/Test.hpp"
+#include "tlp/bool/algo/Not.h"
+#include "tlp/bool/algo/And.h"
+#include "tlp/bool/algo/Or.h"
+#include "tlp/bool/algo/IfThenElse.h"
 
 FIXTURE(TestBool)
 {

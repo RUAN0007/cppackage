@@ -1,7 +1,7 @@
 #ifndef HD78971D5_93C8_49CC_829C_C4FC7A9FB860
 #define HD78971D5_93C8_49CC_829C_C4FC7A9FB860
 
-#include <tlp/bool/BoolType.h>
+#include "tlp/bool/BoolType.h"
 
 TLP_NS_BEGIN
 

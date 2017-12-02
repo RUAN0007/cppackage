@@ -1,11 +1,11 @@
-#include <tlp/test/Test.hpp>
-#include <tlp/list/algo/Comb.h>
-#include <Point.h>
-#include <Line.h>
-#include <Points.h>
-#include <Lines.h>
-#include <Triple.h>
-#include <CountTriangles.h>
+#include "tlp/test/Test.hpp"
+#include "tlp/list/algo/Comb.h"
+#include "Point.h"
+#include "Line.h"
+#include "Points.h"
+#include "Lines.h"
+#include "Triple.h"
+#include "CountTriangles.h"
 
 FIXTURE(TestTriangle)
 {
