@@ -3,7 +3,7 @@
 
 #include <typeinfo>
 
-#include "loki.h"
+#include "loki/loki.h"
 
 LOKI_NS_BEGIN
 
