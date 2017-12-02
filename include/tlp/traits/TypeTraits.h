@@ -4,6 +4,7 @@
 #include <type_traits>
 
 #include "tlp/tlp.h"
+#include "tlp/traits/IsBaseOf.h"
 
 TLP_NS_BEGIN
 
@@ -52,6 +53,9 @@ template <typename T>
   using not_char_t
     = typename TLP_NS::enable_if_t<!TLP_NS::is_char<T>::Value, T>;
 
+template <typename Base, typename Derived>
+  using is_base_of_t
+    = typename TLP_NS::enable_if_t<::std::is_base_of<Base, Derived>::value, Base>;
 TLP_NS_END
 
 #endif

@@ -71,5 +71,9 @@ FIXTURE(TestTraits)
         ASSERT_TRUE(TLP_NS::is_char<char>);
         ASSERT_EQ(TLP_NS::remove_reference_t<const char&>, const char);
         ASSERT_EQ(TLP_NS::remove_cv_t<const char>, char);
+        struct A {};
+        struct B : A {};
+        using R = TLP_NS::is_base_of_t<A, B>;
+        ASSERT_EQ(R, A);
     };
 };
