@@ -111,7 +111,7 @@ class Timer : private Noncopyable {
 class TimerPool : private Noncopyable {
  public:
   static Timer* Instance() {
-    static Timer;
+    static Timer timer;
     return &timer;
   }
   static Timer& GetTimer(const std::string& name) {
