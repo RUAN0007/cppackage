@@ -9,7 +9,6 @@
 #include <string>
 #include <unordered_map>
 
-#include "loki/Singleton.h"
 #include "utils/utils.h"
 #include "utils/Log.h"
 #include "utils/Noncopyable.h"
@@ -109,9 +108,12 @@ class Timer : private Noncopyable {
   bool running_;
 };
 
-class TimerPool : private Noncopyable, public Singleton<TimerPool> {
-  friend class Singleton<TimerPool>;
+class TimerPool : private Noncopyable {
  public:
+  static Timer* Instance() {
+    static Timer;
+    return &timer;
+  }
   static Timer& GetTimer(const std::string& name) {
     return TimerPool::Instance()->timers_[name];
   }
