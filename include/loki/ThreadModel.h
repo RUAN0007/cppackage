@@ -4,6 +4,7 @@
 #include <mutex>
 
 #include "loki/loki.h"
+#include "utils/Noncopyable.h"
 
 LOKI_NS_BEGIN
 

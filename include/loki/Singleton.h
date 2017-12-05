@@ -21,7 +21,7 @@ class Singleton : private ThreadedPolicy<T> {
   // Init instance explicitly with constructor parameters
   template<typename... Args>
   static T* MakeSingleton(Args&&... args) {
-      typename ThreadedPolicy<T>::Lock lock();
+      typename ThreadedPolicy<T>::Lock lock;
       // double check
       if (data_ == nullptr) {
           static T data{std::forward<Args>(args)...};

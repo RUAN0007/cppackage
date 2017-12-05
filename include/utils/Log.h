@@ -155,7 +155,7 @@ inline void MakeCheckOpValueString(std::ostream* os, const T& v) {
 }
 
 template <>
-void MakeCheckOpValueString(std::ostream* os, const std::nullptr_t& p) {
+inline void MakeCheckOpValueString(std::ostream* os, const std::nullptr_t& p) {
     (*os) << "nullptr";
 }
 // Overrides for char types provide readable values for unprintable
