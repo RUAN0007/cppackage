@@ -22,6 +22,7 @@
 #include "tlp/list/algo/Unique.h"
 #include "tlp/list/algo/Replace.h"
 #include "tlp/list/algo/ReplaceAll.h"
+#include "tlp/list/algo/Reverse.h"
 #include "tlp/list/algo/IsSubset.h"
 #include "tlp/list/algo/Belong.h"
 #include "tlp/list/algo/Comb.h"
@@ -205,6 +206,14 @@ FIXTURE(TestListBaseAlgo)
         using Expected = __type_list(int, int, long, int);
 
         ASSERT_EQ(__replace_all(List, short, int), Expected);
+    };
+
+    TEST("reverse a list with multiple elements")
+    {
+        using List = __type_list(int, short, long);
+        using Expected = __type_list(long, short, int);
+
+        ASSERT_EQ(__reverse(List), Expected);
     };
 
     TEST("empty list is the subset of any list")

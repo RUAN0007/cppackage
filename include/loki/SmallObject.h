@@ -238,10 +238,10 @@ template<size_t chunkSize = DEFAULT_CHUNK_SIZE,
 class SmallObject {
  public:
   static void* operator new(size_t size) {
-    return MyAlloc::MakeSingleton(chunkSize, maxSmallObjectSize)->Allocate(size);
+    return MyAlloc::InstanceWithArg(chunkSize, maxSmallObjectSize).Allocate(size);
   }
   static void operator delete(void* p, size_t size) {
-    MyAlloc::MakeSingleton(chunkSize, maxSmallObjectSize)->Deallocate(p, size);
+    MyAlloc::InstanceWithArg(chunkSize, maxSmallObjectSize).Deallocate(p, size);
   }
   virtual ~SmallObject() {}
 };
