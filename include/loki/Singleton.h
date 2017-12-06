@@ -39,6 +39,12 @@ template <typename T,
           template<typename> class ThreadedPolicy = SingleThreaded,
           template <typename> class CreationPolicy = CreateStatic>
 class Singleton : private ThreadedPolicy<T> {
+/*
+NOTE: Multiple singletons are created and destroyped in random order.
+
+If one singleton manipulates another singleton during static initialization time,
+the manipulated singleton may be a dead reference, which has not been inited.
+*/
  public:
   // Get instance
   // or init it without constructor parameter
