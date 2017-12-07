@@ -4,7 +4,6 @@
 #include <memory>
 
 #include "loki/Factory.h"
-#include "loki/Factory.h"
 
 #include "tlp/list/algo/TypeList.h"
 
