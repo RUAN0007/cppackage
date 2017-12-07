@@ -26,6 +26,7 @@
 #include "tlp/list/algo/IsSubset.h"
 #include "tlp/list/algo/Belong.h"
 #include "tlp/list/algo/Cross.h"
+#include "tlp/list/algo/Cartesion.h"
 #include "tlp/list/algo/TypeList.h"
 #include "tlp/list/algo/Comb.h"
 #include "tlp/list/algo/Any.h"
@@ -236,13 +237,13 @@ FIXTURE(TestListBaseAlgo)
 
     TEST("Cross twos list")
     {
-        using L1 = __value_list(1, 2);
-        using L2 = __value_list(4, 5);
+        using L1 = __type_list(int, long);
+        using L2 = __type_list(short, char);
 
-        using E1 = __value_list(1, 4);
-        using E2 = __value_list(1, 5);
-        using E3 = __value_list(2, 4);
-        using E4 = __value_list(2, 5);
+        using E1 = __type_list(int, short);
+        using E2 = __type_list(int, char);
+        using E3 = __type_list(long, short);
+        using E4 = __type_list(long, char);
         using Expected = __type_list(E1, E2, E3, E4);
 
         ASSERT_EQ(__cross(L1, L2), Expected);
@@ -259,6 +260,72 @@ FIXTURE(TestListBaseAlgo)
 
         ASSERT_EQ(__cross(L1, L2), Expected);
     };
+
+    TEST("Cartesion product threes lists each with two elements")
+    {
+
+        // using L1 = __value_list(1);
+        // using L2 = __value_list(3, 4);
+        // using L3 = __value_list(5, 6);
+
+        // using E1 = __value_list(3, 5);
+        // using E2 = __value_list(3, 6);
+        // using E3 = __value_list(4, 5);
+        // using E4 = __value_list(4, 6);
+
+
+        // using E11 = __type_list(__int(1), E1);
+        // using E21 = __type_list(__int(2), E2);
+        // using E31 = __type_list(__int(3), E3);
+        // using E41 = __type_list(__int(4), E4);
+        // // using E5 = __value_list(2, 3, 5);
+        // // using E6 = __value_list(2, 3, 6);
+        // // using E7 = __value_list(2, 4, 5);
+        // // using E8 = __value_list(2, 4, 6);
+        // using Expected = __type_list(E11, E21, E31, E41);
+        // __print(Expected);
+
+        // using C1 = __cross(L2, L3);
+        // using C2 = __cross(L1,C1);
+        // ASSERT_EQ(C2, Expected);
+
+        // using L1 = __value_list(1, 2);
+        // using L2 = __value_list(4, 5);
+
+        // using E1 = __value_list(1, 4);
+        // using E2 = __value_list(1, 5);
+        // using E3 = __value_list(2, 4);
+        // using E4 = __value_list(2, 5);
+        // using Expected = __type_list(E1, E2, E3, E4);
+
+        // ASSERT_EQ(__cartesion(L1, L2), Expected);
+
+
+        // using L1 = __value_list(1, 2);
+        // using L2 = __value_list(3, 4);
+        // using L3 = __value_list(5, 6);
+
+        // using E1 = __value_list( 3, 5);
+        // using E2 = __value_list( 3, 6);
+        // using E3 = __value_list( 4, 5);
+        // using E4 = __value_list( 5, 6);
+
+        // using E1 = __value_list(1, 3, 5);
+        // using E2 = __value_list(1, 3, 6);
+        // using E3 = __value_list(1, 4, 5);
+        // using E4 = __value_list(1, 5, 6);
+        // using E5 = __value_list(2, 3, 5);
+        // using E6 = __value_list(2, 3, 6);
+        // using E7 = __value_list(2, 4, 5);
+        // using E8 = __value_list(2, 5, 6);
+        // using Expected = __type_list(E1, E2, E3, E4);
+        //                              // E5, E6, E7, E8);
+        // using Actual = __cross(L2, L3);
+        // // const int a = 1 / (sizeof(Actual) - sizeof(Actual));
+        // // __print(Expected);
+        // ASSERT_EQ(Actual, Expected);
+    };
+
 
 
     TEST("sublist belongs to lists")
