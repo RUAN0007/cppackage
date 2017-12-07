@@ -25,6 +25,8 @@
 #include "tlp/list/algo/Reverse.h"
 #include "tlp/list/algo/IsSubset.h"
 #include "tlp/list/algo/Belong.h"
+#include "tlp/list/algo/Cross.h"
+#include "tlp/list/algo/TypeList.h"
 #include "tlp/list/algo/Comb.h"
 #include "tlp/list/algo/Any.h"
 #include "tlp/list/algo/All.h"
@@ -231,6 +233,33 @@ FIXTURE(TestListBaseAlgo)
     {
         ASSERT_TRUE(__belong(__empty_list(), __value_list(1)));
     };
+
+    TEST("Cross twos list")
+    {
+        using L1 = __value_list(1, 2);
+        using L2 = __value_list(4, 5);
+
+        using E1 = __value_list(1, 4);
+        using E2 = __value_list(1, 5);
+        using E3 = __value_list(2, 4);
+        using E4 = __value_list(2, 5);
+        using Expected = __type_list(E1, E2, E3, E4);
+
+        ASSERT_EQ(__cross(L1, L2), Expected);
+    };
+
+    TEST("Cross one list with an empty list")
+    {
+        using L1 = __value_list(1, 2, 3);
+        using L2 = __empty_list();
+        using E1 = __value_list(1);
+        using E2 = __value_list(2);
+        using E3 = __value_list(3);
+        using Expected = __type_list(E1, E2, E3);
+
+        ASSERT_EQ(__cross(L1, L2), Expected);
+    };
+
 
     TEST("sublist belongs to lists")
     {
