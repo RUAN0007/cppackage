@@ -15,7 +15,6 @@
 #include "tlp/traits/IsConvertible.h"
 #include "tlp/int/algo/Sub.h"
 #include "tlp/int/IntType.h"
-#include "tlp/test/details/Print.h"
 
 LOKI_NS_BEGIN
 
