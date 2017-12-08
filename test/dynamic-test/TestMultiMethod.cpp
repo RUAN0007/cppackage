@@ -96,4 +96,27 @@ TEST(StaticDispatcher, StaticExecutor){
   delete three;
 }
 
+TEST(FnDispatcher, Basic) {
+  Digit* one = new OneDigit;
+  Digit* two = new TwoDigit;
+  Digit* three = new ThreeDigit;
+
+  LOKI_NS::FnDispatcher<Digit, Digit, int> fn_dispatcher;
+  fn_dispatcher.Add<OneDigit, OneDigit, &StaticSumExecutor::Fire>();
+  fn_dispatcher.Add<OneDigit, TwoDigit, &StaticSumExecutor::Fire>();
+  fn_dispatcher.Add<TwoDigit, OneDigit, &StaticSumExecutor::Fire>();
+  fn_dispatcher.Add<TwoDigit, TwoDigit, &StaticSumExecutor::Fire>();
+  fn_dispatcher.AddDefault<&StaticSumExecutor::OnError>();
+
+  ASSERT_EQ(2, fn_dispatcher.Go(*one, *one));
+  ASSERT_EQ(3, fn_dispatcher.Go(*one, *two));
+  ASSERT_EQ(3, fn_dispatcher.Go(*two, *one));
+  ASSERT_EQ(4, fn_dispatcher.Go(*two, *two));
+  ASSERT_EQ(0, fn_dispatcher.Go(*three, *two));
+  ASSERT_EQ(0, fn_dispatcher.Go(*one, *three));
+
+  delete one;
+  delete two;
+  delete three;
+}
 
