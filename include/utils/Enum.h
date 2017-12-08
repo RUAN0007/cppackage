@@ -19,7 +19,7 @@ struct Enum {
       return *this;
     }
 
-    Iterator& operator++(int) {
+    Iterator operator++(int) {
       Iterator it = *this;
       ++(*this);
       return it;
