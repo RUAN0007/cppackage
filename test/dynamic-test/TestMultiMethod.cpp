@@ -19,16 +19,16 @@ using DigitList = __type_list(OneDigit, TwoDigit);
 using DigitDispatcher1 = LOKI_NS::StaticDispatcher<Digit, DigitList, Digit, DigitList, int>;
 
 struct SumExecutor : DigitDispatcher1::BaseExecutor {
-  int Fire(OneDigit&, OneDigit&) override {
+  int operator()(OneDigit&, OneDigit&) override {
     return 2;
   }
-  int Fire(TwoDigit&, OneDigit&) override {
+  int operator()(TwoDigit&, OneDigit&) override {
     return 3;
   }
-  int Fire(OneDigit&, TwoDigit&) override {
+  int operator()(OneDigit&, TwoDigit&) override {
     return 3;
   }
-  int Fire(TwoDigit&, TwoDigit&) override {
+  int operator()(TwoDigit&, TwoDigit&) override {
     return 4;
   }
 

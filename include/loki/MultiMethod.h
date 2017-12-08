@@ -16,8 +16,8 @@ template <class ReturnType>
 struct ExecutorBinder {
   template <class ArgPair>
   struct Executor {
-    virtual ReturnType Fire(typename ArgPair::First&,
-                            typename ArgPair::Second&) = 0;
+    virtual ReturnType operator()(typename ArgPair::First&,
+                                  typename ArgPair::Second&) = 0;
     virtual ~Executor() = default;
   };
 };
@@ -103,8 +103,7 @@ class StaticDispatcher<BaseLhs, TLP_NS::NullType,
 
        using BaseExecutor = typename ExecutorBinder<ResultType>::template
                               Executor<TLP_NS::Pair<SomeLhs, Head>>;
-       return static_cast<BaseExecutor&>(exec).Fire(lhs, *p2);
-       // return exec.Fire(lhs, *p2);
+       return static_cast<BaseExecutor&>(exec)(lhs, *p2);
     } else {
       return StaticDispatcher<BaseLhs, TLP_NS::NullType,
                               BaseRhs, Tail,
